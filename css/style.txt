@@ -1,0 +1,178 @@
+:root {
+    --primary-color: #4a4a4a;
+    --secondary-color: #ffffff;
+    --background-color: #f0f0f0;
+    --card-background: #e0e0e0; /* Cambiado a un gris claro */
+}
+
+body {
+    font-family: 'Your-Font', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+#slogan {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.email-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.contact-info span {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Estilos para la sección de trayectoria */
+#trayectoria {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trayectoria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin-top: 2rem;
+}
+
+.trayectoria-card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trayectoria-card h3 {
+    margin-bottom: 1rem;
+}
+
+.trayectoria-card img {
+    width: 50px;
+    height: auto;
+    margin: 0.5rem;
+}
+
+.cv-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #logo {
+        width: 150px;
+    }
+
+    #slogan {
+        font-size: 1.2rem;
+    }
+
+    .trayectoria-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

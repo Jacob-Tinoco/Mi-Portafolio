@@ -1,0 +1,343 @@
+:root {
+    --primary-color: #4a4a4a;
+    --secondary-color: #ffffff;
+    --background-color: #f0f0f0;
+}
+
+body {
+    font-family: 'Your-Font', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+#slogan {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.email-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.contact-info span {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Estilos para la sección de proyectos */
+#proyectos {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+}
+
+#proyectos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.project-info {
+    padding: 1rem;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.project-dates {
+    font-size: 0.8rem;
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para la sección de trayectoria */
+#trayectoria {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+}
+
+#trayectoria h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.trayectoria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.trayectoria-card {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.trayectoria-card:hover {
+    transform: translateY(-5px);
+}
+
+.trayectoria-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.trayectoria-info {
+    text-align: center;
+}
+
+.trayectoria-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.trayectoria-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.trayectoria-date {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Estilos para la sección Sobre mí */
+#sobre-mi {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+#sobre-mi h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.sobre-mi-container {
+    display: flex;
+    flex-direction: row; /* Cambiar a fila para alinear horizontalmente */
+    align-items: center;
+    justify-content: flex-start; /* Alinear el contenido al inicio (izquierda) */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre-mi-foto {
+    width: 250px; /* Ajustar el tamaño deseado */
+    height: 250px; /* Ajustar el tamaño deseado */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 2rem; /* Añadir espacio entre la foto y el texto */
+}
+
+.sobre-mi-info {
+    text-align: left;
+}
+
+.sobre-mi-info h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.sobre-mi-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .sobre-mi-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .sobre-mi-foto {
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+
+    .sobre-mi-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #logo {
+        width: 150px;
+    }
+
+    #slogan {
+        font-size: 1.2rem;
+    }
+
+    .projects-grid, .trayectoria-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.qr-instagram {
+    display: inline-block;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.qr-image {
+    width: 180px; /* Ajusta el tamaño según sea necesario */
+    height: 180px; /* Asegúrate de que la imagen mantenga sus proporciones */
+    border-radius: 10px; /* Opcional: redondear bordes */
+    transition: transform 0.3s ease;
+}
+
+.qr-image:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+#contact-info {
+    display: flex;
+    flex-direction:column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-top: 2rem;
+}
+
+.btn-download-cv {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download-cv:hover {
+    background-color: var(--secondary-color);
+}
