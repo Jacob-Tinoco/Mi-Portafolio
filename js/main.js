@@ -38,32 +38,88 @@ document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
             title: "Implementación de 3 dispositivos controller en una computadora",
-            description: `Para este proyecto se realizó un algoritmo de seguimiento de 13 Gestos estáticos.
-                          Posteriormente, se buscó ampliar el campo de visión utilizando 3 sensores tipo LMC,
-                          (no era usual poder usar más de 1 sensor en una misma computadora).`,
+            description: `En este proyecto, se desarrolló un algoritmo para el seguimiento de 13 gestos estáticos utilizando tres 
+                          sensores LMC (Leap Motion Controller), que detectan gestos a través de señales de luz. El uso de múltiples 
+                          sensores en una computadora es limitado por restricciones de conectividad USB. Cada sensor tiene un alcance
+                          de 600mm en el eje X, 600mm en el eje Z y 800mm en el eje Y. Al combinar tres sensores, se amplía el campo de
+                          visión y la confianza de lectura llegando a 3200mm en el eje X, 800mm en el eje Z y 1200mm en el eje Y,  y un aumento del 12% en confianza de lectura; 
+                          mejorando la precisión y versatilidad del seguimiento de gestos.`,
             image: "img/LMC-demostracion.gif",
             createdDate: "Oct-2023",
             updatedDate: "Ene-2024"
         },
         {
             title: "Control alternativo de UR3e",
-            description: `Con un proyecto de desarrollo a cargo del Dr. Iván García y bajo la supervisión
-                          del Ing. Gabriel Salinas en los laboratorios de LANITED, se creó un control alternativo
-                          de cobot UR3e de Universal robots dentro de una celda de Manufactura Avanzada`,
+            description: `En este proyecto, se desarrolló en los laboratorios de LANITED un control alternativo para el cobot UR3e de Universal Robots, un robot 
+                          colaborativo diseñado para trabajar junto con humanos. LANITED es el Laboratorio 
+                          Nacional de Tecnologías Digitales que fomenta la innovación en la industria 4.0 con la creación de métodos 
+                          alternativos para cobots como uno de sus mutliples proyectos. El proyecto es crucial en la manufactura 
+                          avanzada, ya que permite integrar el Internet de las 
+                          Cosas (IoT), mejorando la eficiencia y flexibilidad en los procesos productivos. Este enfoque promueve una 
+                          colaboración más efectiva entre humanos y máquinas, optimizando la producción y reduciendo costos.`,
             image: "img/UR3e alternative-control.gif",
             createdDate: "Sep-2023",
             updatedDate: "Feb-2024"
         },
         {
-            title: "IA, Simulación de peces Betta",
-            description:`La meta de esta IA es que aprenda el movimiento natural de peces Betta.
-                         Como etapa inicial es la simulación de trayectoria de 50 objetos, escalando
-                         el proyecto para simular peces Betta artificiales en un acuario`,
+            title: "IA, Simulación de peces Betta usando GAN´s",
+            description:`La meta de esta IA es aprender el movimiento natural de los peces Betta, comenzando con la simulación de
+                         trayectorias de 50 objetos para escalar el proyecto hacia peces Betta artificiales en un acuario. Las GAN
+                          (Generative Adversarial Networks) son un tipo de red neuronal compuesta por dos modelos: un generador y 
+                          un discriminador, que compiten entre sí para mejorar la calidad de las simulaciones. Las ventajas de las 
+                          GAN incluyen la capacidad de generar datos realistas, enriqueciendo la experiencia visual y de interacción 
+                          en entornos virtuales.`,
             image: "img/IA simulation.gif",
             createdDate: "Oct-2024",
             updatedDate: "Oct-2024"
+        },
+
+        
+    ];
+    const hiddenProjects = [
+        {
+            title: "IA, Asistente virtual basado en chat GPT para Dev's",
+            description:`Este proyecto se centra en el desarrollo de un asistente virtual basado en Chat GPT, 
+                         un modelo de lenguaje de inteligencia artificial diseñado por OpenAI. Chat GPT puede 
+                         comprender y generar texto de manera coherente, ideal para interactuar con usuarios.
+                          Al orientarlo hacia contextos específicos, como la programación, se puede entrenar 
+                          para proporcionar respuestas precisas sobre lenguajes de programación, resolver 
+                          errores de código y ofrecer ejemplos prácticos. Esto no solo mejora la eficiencia 
+                          en la resolución de problemas, sino que también facilita el aprendizaje y la asistencia 
+                          técnica en tiempo real para desarrolladores.`,
+            image: "img/Version 1 del asistente.gif",
+            createdDate: "Oct-2024",
+            updatedDate: "Oct-2024"
+        },
+        {
+            title: "Reconocimiento Humano",
+            description: `Implementando la herramienta OpenCV y YOLO, se busca desarrollar un algoritmo 
+                          de detección humana que permita identificar y localizar personas en imágenes 
+                          y videos. YOLO, que significa "You Only Look Once", es un modelo de detección 
+                          de objetos que procesa imágenes, como frames de videos. Su aplicación se extiende 
+                          a áreas como la vigilancia de seguridad, la conducción autónoma y la interacción 
+                          humano-computadora. OpenCV, por su parte, proporciona las funciones necesarias 
+                          para el procesamiento de imágenes y el manejo de video, complementando así 
+                          las capacidades de YOLO. Este proyecto busca no solo mejorar la precisión en la detección,
+                           sino también optimizar el rendimiento en entornos dinámicos. `,
+            image: "img/personsdetect.gif",
+            createdDate: "Oct-2024",
+            updatedDate: "Oct-2024"
+        },
+        {
+            title: "Ping pong con Pygame",
+            description: `Pygame es una biblioteca de Python que permite desarrollar videojuegos de manera sencilla,
+                          proporcionando herramientas para manejar gráficos, sonido y eventos. Al utilizar Pygame, 
+                          se puede desarrollar habilidades en lógica de programación, diseño de interfaces gráficas 
+                          y simulación de física de objetos. En este proyecto de videojuego estilo ping pong, muy al estilo de los 2000's, 
+                          implementé modularizaciones que separan la lógica del juego, la física de las colisiones y 
+                          la interfaz gráfica, lo que facilita el mantenimiento y la expansión del código.`,
+            image: "img/Pingpong.gif",
+            createdDate: "Jun-2024",
+            updatedDate: "Jul-2024"
         }
     ];
+
 
     // Datos de la trayectoria
     const trayectoria = [
@@ -99,8 +155,17 @@ document.addEventListener('DOMContentLoaded', function() {
                           en CNC en corte laser tipo LINCOLN ELECTRIC,
                           CNC de 3 ejes tipo MAKITA, CNC corte plasma tipo 
                           Turbo Laser y CNC de impresión 3D tipo ANET, ENDER y FlashForge, asi como 
-                          el modelado de los objetos impresos en Blender y SolidWorks.`,
+                          el modelado de los objetos impresos en Blender, SolidWorks y CoreDraw.`,
             image: "img/PUBLIGRAB.png",
+            date: "2020-2024"
+        },
+        {
+            title: "CFE",
+            description: `Experiencia programando y desarrollando protocolos de seguirdad, obteniendo capacitación como
+                          brigadista anti-incendios, y cpacitación en el uso de Macros en Excel. Durante mi estancia 
+                          desarrolle protocolos de seguirdad en caso de incendio para los edificios del Centro Nacional de
+                          Capacitación Ixtapantongo CFE (CAOI).`,
+            image: "img/cfe.png",
             date: "2020-2024"
         },
         {
@@ -117,19 +182,20 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: "Carrera Universitaria",
-            description: `Licenciatura en Mecatrónica, con especialidad en
+            description: `Licenciatura en Ingeniería Mecatrónica, con especialidad en
                           Manufactura Avanzada y Autoamtización de procesos.
                           Donde en la aprticipacion del coloquio de investigacion cientifica y tecnologica
                           del 2019 se obtuvieron el 1er y 3er lugar del coloquio con los Poryectos:
                           Introcucccion a la Inteligencia Artificial con Redes Neuronales Artificales (RNA)
-                          y Desarrollo e implementacion de sistemas de seguridad para casa habitacion por medio
+                          y Desarrollo e implementacion de sistemas de seguridad para casa habitacion por medio de la
                           domotica.`,
             image: "img/Mecatronica.png",
             date: "2018-2024"
         },
         {
             title: "Carrera Técnica",
-            description: `Especialidad en informática, donde cree habilidades y conocimientos practicos
+            description: `Carrera técnica en Sistemas ComputacionalesEspecialidad en informática, 
+                          donde cree habilidades y conocimientos practicos
                           para el manetenimiento de equipos computacioneles, programacion web, programacion 
                           en lenguaje C, C++, Java, implementacion practica basica de SQL, 
                           implementacion y manejo de paqueteria Office (Word, Excel, PowerPoint, Acces,
@@ -186,7 +252,57 @@ document.addEventListener('DOMContentLoaded', function() {
             projectsGrid.appendChild(projectCard);
         });
     }
+// Función para cargar los proyectos ocultos
+// Función para cargar los proyectos ocultos
+function loadHiddenProjects() {
+    const hiddenProjectsContainer = document.querySelector('.hidden-projects');
 
+    // Verificar si ya se han cargado los proyectos
+    if (hiddenProjectsContainer.children.length === 0) {
+        hiddenProjects.forEach(project => {
+            const projectCard = document.createElement('div');
+            projectCard.className = 'project-card';
+
+            projectCard.innerHTML = `
+                <img src="${project.image}" alt="${project.title}" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${project.description}</p>
+                    <div class="project-dates">
+                        <span>Creado: ${formatDate(project.createdDate)}</span>
+                        <span>Actualizado: ${formatDate(project.updatedDate)}</span>
+                    </div>
+                </div>
+            `;
+            hiddenProjectsContainer.appendChild(projectCard);
+        });
+    }
+}
+
+// Evento para mostrar más proyectos
+document.getElementById('show-more-projects').addEventListener('click', function() {
+    const hiddenProjectsContainer = document.querySelector('.hidden-projects');
+    hiddenProjectsContainer.style.display = 'grid'; // Muestra los proyectos ocultos
+    loadHiddenProjects(); // Carga los proyectos ocultos
+    this.style.display = 'none'; // Oculta el botón de mostrar
+    document.getElementById('show-less-projects').style.display = 'block'; // Muestra el botón de mostrar menos
+});
+
+// Evento para mostrar menos proyectos
+document.getElementById('show-less-projects').addEventListener('click', function() {
+    const hiddenProjectsContainer = document.querySelector('.hidden-projects');
+    hiddenProjectsContainer.style.display = 'none'; // Oculta los proyectos ocultos
+    document.getElementById('show-more-projects').style.display = 'block'; // Muestra el botón de mostrar más
+    this.style.display = 'none'; // Oculta el botón de mostrar menos
+});
+
+// Evento para mostrar menos proyectos
+document.getElementById('show-less-projects').addEventListener('click', function() {
+    const hiddenProjectsContainer = document.querySelector('.hidden-projects');
+    hiddenProjectsContainer.style.display = 'none'; // Oculta los proyectos ocultos
+    this.style.display = 'none'; // Oculta el botón de mostrar menos
+    document.getElementById('show-more-projects').style.display = 'block'; // Muestra el botón de mostrar más
+});
     // Función para cargar la trayectoria
     function loadTrayectoria() {
         const trayectoriaGrid = document.querySelector('.trayectoria-grid');
@@ -231,6 +347,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cargar todas las secciones
     loadProjects();
+
     loadTrayectoria();
     loadSobreMi();
 });
