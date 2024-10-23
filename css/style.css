@@ -111,6 +111,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    margin-bottom: 2rem; /* Añadir margen inferior */
 }
 
 .project-card {
@@ -152,6 +153,100 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+/* Estilo para proyectos ocultos*/
+#hidden-projects {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+}
+
+#hidden-projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.hidden-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.hidden-projects .project-card {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hidden-projects .project-card:hover {
+    transform: translateY(-5px);
+}
+
+.hidden-projects .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hidden-projects .project-info {
+    padding: 1rem;
+}
+
+.hidden-projects .project-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hidden-projects .project-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.hidden-projects .project-dates {
+    font-size: 0.8rem;
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para el botón de mostrar más proyectos */
+.btn-show-more {
+    display: block;
+    margin: 2rem auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-show-more:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+/* Estilos para el botón de mostrar más proyectos */
+.btn-show-less {
+    display: block;
+    margin: 2rem auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-show-less:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+
 
 /* Estilos para la sección de trayectoria */
 #trayectoria {
