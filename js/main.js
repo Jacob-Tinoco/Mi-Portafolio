@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Implementación de 3 dispositivos controller en una computadora",
             description: `En este proyecto, se desarrolló un algoritmo para el seguimiento de 13 gestos estáticos utilizando tres 
                           sensores LMC (Leap Motion Controller), que detectan gestos a través de señales de luz. El uso de múltiples 
-                          sensores en una computadora es limitado por restricciones de conectividad USB. Cada sensor tiene un alcance
-                          de 600mm en el eje X, 600mm en el eje Z y 800mm en el eje Y. Al combinar tres sensores, se amplía el campo de
-                          visión y la confianza de lectura llegando a 3200mm en el eje X, 800mm en el eje Z y 1200mm en el eje Y,  y un aumento del 12% en confianza de lectura; 
+                          sensores en una computadora está limitado por restricciones de conectividad USB. Cada sensor tiene un alcance
+                          de 600 mm en el eje X, 600 mm en el eje Z y 800 mm en el eje Y. Al combinar tres sensores, se amplía el campo de
+                          visión y la confianza de lectura, llegando aumentar hasta 266% el rango de visión y un aumentando el 12% en la confianza de lectura; 
                           mejorando la precisión y versatilidad del seguimiento de gestos.`,
             image: "img/LMC-demostracion.gif",
             createdDate: "Oct-2023",
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: `En este proyecto, se desarrolló en los laboratorios de LANITED un control alternativo para el cobot UR3e de Universal Robots, un robot 
                           colaborativo diseñado para trabajar junto con humanos. LANITED es el Laboratorio 
                           Nacional de Tecnologías Digitales que fomenta la innovación en la industria 4.0 con la creación de métodos 
-                          alternativos para cobots como uno de sus mutliples proyectos. El proyecto es crucial en la manufactura 
+                          alternativos para cobots como uno de sus múltiples proyectos. El proyecto es crucial en la manufactura 
                           avanzada, ya que permite integrar el Internet de las 
                           Cosas (IoT), mejorando la eficiencia y flexibilidad en los procesos productivos. Este enfoque promueve una 
                           colaboración más efectiva entre humanos y máquinas, optimizando la producción y reduciendo costos.`,
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "img/IA simulation.gif",
             createdDate: "Oct-2024",
             updatedDate: "Oct-2024"
-        },
+        }
 
         
     ];
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
                           errores de código y ofrecer ejemplos prácticos. Esto no solo mejora la eficiencia 
                           en la resolución de problemas, sino que también facilita el aprendizaje y la asistencia 
                           técnica en tiempo real para desarrolladores.`,
-            image: "img/Version 1 del asistente.gif",
+            image: "img/IA chat.gif",
             createdDate: "Oct-2024",
             updatedDate: "Oct-2024"
         },
@@ -101,17 +101,28 @@ document.addEventListener('DOMContentLoaded', function() {
                           humano-computadora. OpenCV, por su parte, proporciona las funciones necesarias 
                           para el procesamiento de imágenes y el manejo de video, complementando así 
                           las capacidades de YOLO. Este proyecto busca no solo mejorar la precisión en la detección,
-                           sino también optimizar el rendimiento en entornos dinámicos. `,
-            image: "img/personsdetect.gif",
+                           sino también optimizar el rendimiento en entornos dinámicos.`,
+            image: "img/Demwebperson.gif",
             createdDate: "Oct-2024",
+            updatedDate: "Oct-2024"
+        },
+        {
+            title: "BoomBerMan en Python",
+            description: `Este proyecto consiste en la creación de un juego simple utilizando Pygame, donde el jugador 
+                          controla un personaje que se mueve por la pantalla. El juego implementa animaciones para las 
+                          acciones de movimiento y una animación estática que se activa al no presionar teclas. Las 
+                          animaciones se gestionan a través de sprites, permitiendo una experiencia visual dinámica. 
+                          El objetivo es proporcionar un entorno interactivo y entretenido para los jugadores.`,
+            image: "img/boomberman.gif",
+            createdDate: "Mar-2019",
             updatedDate: "Oct-2024"
         },
         {
             title: "Ping pong con Pygame",
             description: `Pygame es una biblioteca de Python que permite desarrollar videojuegos de manera sencilla,
                           proporcionando herramientas para manejar gráficos, sonido y eventos. Al utilizar Pygame, 
-                          se puede desarrollar habilidades en lógica de programación, diseño de interfaces gráficas 
-                          y simulación de física de objetos. En este proyecto de videojuego estilo ping pong, muy al estilo de los 2000's, 
+                          se pueden desarrollar habilidades en lógica de programación, diseño de interfaces gráficas 
+                          y simulación de física de objetos. En este proyecto de videojuego estilo ping pong, muy al estilo de los 2000, 
                           implementé modularizaciones que separan la lógica del juego, la física de las colisiones y 
                           la interfaz gráfica, lo que facilita el mantenimiento y la expansión del código.`,
             image: "img/Pingpong.gif",
@@ -127,16 +138,16 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Programa Delfin",
             description: `Participación en el equipo VisionTeam 
                           para el desarrollo de skill en AWS para Alexa 
-                          con fines de desarrollo e investigacion.`,
+                          con fines de desarrollo e investigación.`,
             image: "img/Veranodelfin.jpeg",
             date: "2021",
         },
         {
             title: "LANITED, Contol alternativo de COBOTS",
-            description: `Colaboración en proyectos de investigación en LANITED.
-                          para el desarrollo de control alternativo de Cobots tipo UR3e, 
+            description: `Colaboración en proyectos de investigación en LANITED
+                          para el desarrollo de control alternativo de cobots tipo UR3e, 
                           donde se usaron herramientas para el reconocimiento de manos 
-                          y gestos`,
+                          y gestos.`,
             image: "img/LANITED.jpg",
             date: "2023-2024"
         },
@@ -351,4 +362,3 @@ document.getElementById('show-less-projects').addEventListener('click', function
     loadTrayectoria();
     loadSobreMi();
 });
-
