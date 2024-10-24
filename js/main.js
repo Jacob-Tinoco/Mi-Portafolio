@@ -107,8 +107,9 @@ document.addEventListener('DOMContentLoaded', function() {
             updatedDate: "Oct-2024"
         },
         {
-            title: "BoomBerMan en Python",
-            description: `Este proyecto consiste en la creación de un juego simple utilizando Pygame, donde el jugador 
+            title: "BoomberMan en Python",
+            description: `Este proyecto consiste en la adaptación de un juego programado en 2019 con lenguaje c++,
+                          a lenguaje Python  utilizando Pygame, donde el jugador 
                           controla un personaje que se mueve por la pantalla. El juego implementa animaciones para las 
                           acciones de movimiento y una animación estática que se activa al no presionar teclas. Las 
                           animaciones se gestionan a través de sprites, permitiendo una experiencia visual dinámica. 
