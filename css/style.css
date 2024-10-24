@@ -47,7 +47,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -83,6 +83,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 0.5rem 1rem;
     border-radius: 20px;
+    border-style:outset;
 }
 
 .email-icon {
@@ -99,31 +100,33 @@ footer {
 /* Estilos para la sección de proyectos */
 #proyectos {
     padding: 4rem 2rem;
-    background-color: var(--background-color);
+    background-color: #435C73;
 }
 
 #proyectos h2 {
     text-align: center;
     margin-bottom: 2rem;
+    color: white;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* :grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 2rem; /* Añadir margen inferior */
 }
 
 .project-card {
-    background-color: var(--secondary-color);
+    background-color: rgb(21, 16, 25);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px #364659;
     transition: transform 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
 }
 
 .project-image {
@@ -134,22 +137,25 @@ footer {
 
 .project-info {
     padding: 1rem;
+    text-align: justify;
 }
 
 .project-title {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .project-description {
     font-size: 0.9rem;
-    color: #666;
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 1rem;
+    
 }
 
 .project-dates {
     font-size: 0.8rem;
-    color: #888;
+    color: rgba(255, 255, 255, 0.9);
     display: flex;
     justify-content: space-between;
 }
@@ -163,23 +169,25 @@ footer {
 #hidden-projects h2 {
     text-align: center;
     margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
 }
 .hidden-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+
 }
 
 .hidden-projects .project-card {
-    background-color: var(--secondary-color);
+    background-color: rgb(21, 16, 25);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgb(26, 16, 25);
     transition: transform 0.3s ease;
 }
 
 .hidden-projects .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
 }
 
 .hidden-projects .project-image {
@@ -190,22 +198,25 @@ footer {
 
 .hidden-projects .project-info {
     padding: 1rem;
+    text-align: justify;
 }
 
 .hidden-projects .project-title {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .hidden-projects .project-description {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .hidden-projects .project-dates {
     font-size: 0.8rem;
-    color: #888;
+    color: rgba(255, 255, 255, 0.9);
     display: flex;
     justify-content: space-between;
 }
@@ -251,12 +262,14 @@ footer {
 /* Estilos para la sección de trayectoria */
 #trayectoria {
     padding: 4rem 2rem;
-    background-color: var(--background-color);
+    background-color: rgb(54, 70, 89);
 }
 
 #trayectoria h2 {
     text-align: center;
     margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    
 }
 
 .trayectoria-grid {
@@ -266,10 +279,10 @@ footer {
 }
 
 .trayectoria-card {
-    background-color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px #364659; 
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -278,7 +291,7 @@ footer {
 }
 
 .trayectoria-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
 }
 
 .trayectoria-image {
@@ -289,24 +302,25 @@ footer {
 }
 
 .trayectoria-info {
-    text-align: center;
+    text-align: justify;
 }
 
 .trayectoria-title {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: rgba(12, 16, 25, 0.9);
 }
 
 .trayectoria-description {
     font-size: 0.9rem;
-    color: #666;
+    color: rgba(16, 12, 25, 0.9);
     margin-bottom: 1rem;
 }
 
 .trayectoria-date {
     font-size: 0.8rem;
-    color: #888;
+    color: rgba(16, 12, 25, 0.9);
+    text-align: center;
 }
 
 /* Estilos para la sección Sobre mí */
@@ -338,10 +352,11 @@ footer {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 2rem;
+    align-content: center;
 }
 
 .sobre-mi-info {
-    text-align: left;
+    text-align: justify;
 }
 
 .sobre-mi-info h3 {
@@ -398,7 +413,7 @@ footer {
 /* ... (tus estilos existentes) ... */
 #contactos {
     padding: 4rem 2rem;
-    background-color: var(--background-color);
+    background-color: rgb(21, 16, 25);
     text-align: center;
   }
   
@@ -414,7 +429,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: var(--text-color);  /* AsegÃºrate de tener definido --text-color en tus variables CSS */
+    color: rgba(255, 255, 255, 0.826);  /* AsegÃºrate de tener definido --text-color en tus variables CSS */
     transition: transform 0.3s ease;
   }
   
