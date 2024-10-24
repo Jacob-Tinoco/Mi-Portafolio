@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Tinoco - Portfolio</title>
+    <!-- Medidas de seguridad -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- Fin de medidas de seguridad -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#trayectoria">TRAYECTORIA</a></li>
+                <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                <li><a href="#contactos">CONTACTOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>JACOB TINOCO</h1>
+            <img src="img/logo.png" alt="Logo de Jacob Tinoco" id="logo">
+            <p id="slogan">Un placer conocerte</p>
+            <a href="files/cv.pdf" class="btn-download-cv" download>Descarga mi CV</a>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="projects-grid">
+                <!-- Los proyectos se cargarán dinámicamente aquí -->
+            </div>
+            <button id="show-more-projects" class="btn-show-more">Mostrar más proyectos</button>
+
+            <div class="hidden-projects" style="display: none;">
+                <!-- Aquí se cargarán los proyectos ocultos -->
+            </div>
+            <button id="show-less-projects" class="btn-show-less" style="display: none;">Mostrar menos proyectos</button>
+        </section>
+              
+        <section id="trayectoria">
+            <h2>Trayectoria</h2>
+            <div class="trayectoria-grid">
+                <!-- La trayectoria se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <div class="sobre-mi-container">
+              <!-- La información sobre mí se cargará dinámicamente aquí -->
+            </div>
+            <div class="cta-container">
+              <a href="files/cv.pdf" class="btn-download-cv" download>Descargar mi CV</a>
+            </div>
+          </section>
+
+          <section id="contactos">
+            <h2>Contactos</h2>
+            <div class="contactos-container">
+              <a href="mailto:tu.email@ejemplo.com?subject=Contacto desde tu sitio web" class="contact-button email">
+                <img src="img/mail.jpg" alt="QR para enviarme correo" class="qr-image">
+                <span>Email</span>
+              </a>    
+              <a href="https://www.linkedin.com/in/jacob-t-329675258/" target="_blank" class="contact-button linkedin">
+                <img src="img/LKD.png" alt="QR a mi perfil de LinkedIn" class="qr-image">
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://wa.me/qr/SS7PZKAELLQHM1" target="_blank" class="contact-button whatsapp">
+                <img src="img/qr whats.jpg" alt="QR a mi contacto de WhatsApp" class="qr-image">
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://www.instagram.com/jknc.0/" target="_blank" class="contact-button instagram">
+                <img src="img/qr_instagram.png" alt="QR a mi perfil de Instagram" class="qr-image">
+                <span>Instagram</span>
+              </a>
+            </div>
+          </section>
+          
+       
+
+
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <img src="img/email-icon.png" alt="Email" class="email-icon">
+            <span>Jacobtinoco.ao@gmail.com</span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
