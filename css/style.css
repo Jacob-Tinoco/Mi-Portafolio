@@ -22,7 +22,11 @@ header {
     padding: 1rem 0;
     z-index: 1000;
 }
-
+@media (max-width: 768px) {
+    header {
+        margin-bottom: 40px; /* Aumenta el margen en móviles */
+    }
+}
 nav ul {
     display: flex;
     justify-content: center;
