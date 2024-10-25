@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: "CFE",
             description: `Experiencia programando y desarrollando protocolos de seguirdad, obteniendo capacitación como
-                          brigadista anti-incendios, y cpacitación en el uso de Macros en Excel. Durante mi estancia 
+                          brigadista anti-incendios, y capacitación en el uso de Macros en Excel. Durante mi estancia 
                           desarrolle protocolos de seguirdad en caso de incendio para los edificios del Centro Nacional de
                           Capacitación Ixtapantongo CFE (CAOI).`,
             image: "img/cfe.png",
@@ -195,22 +195,22 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: "Carrera Universitaria",
             description: `Licenciatura en Ingeniería Mecatrónica, con especialidad en
-                          Manufactura Avanzada y Autoamtización de procesos.
-                          Donde en la aprticipacion del coloquio de investigacion cientifica y tecnologica
-                          del 2019 se obtuvieron el 1er y 3er lugar del coloquio con los Poryectos:
-                          Introcucccion a la Inteligencia Artificial con Redes Neuronales Artificales (RNA)
-                          y Desarrollo e implementacion de sistemas de seguridad para casa habitacion por medio de la
-                          domotica.`,
+                          Manufactura Avanzada y Automatización de procesos.
+                          Donde en la aparticipacion del coloquio de investigacion cientifica y tecnologica
+                          del 2019 se obtuvierón el 1er y 3er lugar del coloquio con los Proyectos:
+                          Introcuccción a la Inteligencia Artificial con Redes Neuronales Artificales (RNA)
+                          y Desarrollo e implementación de sistemas de seguridad para casa habitación por medio de la
+                          domótica.`,
             image: "img/Mecatronica.png",
             date: "2018-2024"
         },
         {
             title: "Carrera Técnica",
-            description: `Carrera técnica en Sistemas ComputacionalesEspecialidad en informática, 
+            description: `Carrera técnica en Sistemas Computacionales con Especialidad en informática, 
                           donde cree habilidades y conocimientos practicos
-                          para el manetenimiento de equipos computacioneles, programacion web, programacion 
-                          en lenguaje C, C++, Java, implementacion practica basica de SQL, 
-                          implementacion y manejo de paqueteria Office (Word, Excel, PowerPoint, Acces,
+                          para el manetenimiento de equipos computacioneles, programacion web, programación 
+                          en lenguaje C, C++, Java, implementación practica basica de SQL, 
+                          implementación y manejo de paqueteria Office (Word, Excel, PowerPoint, Acces,
                           One Note, Project, entre otros).`,
             image: "img/sep.png",
             date: "2015-2018"
@@ -225,13 +225,13 @@ document.addEventListener('DOMContentLoaded', function() {
                       con gran interés por cualquier tipo de conocimiento artístico, filosófico 
                       y científico.\
                       \
-                      Tengo un muro en Instagram donde posteo mis hobbies de fotografia, en ocaciones
+                      Tengo un muro en Instagram donde posteo mis hobbies como fotografia, en ocaciones
                       hago divulgación cientifica compartiendo publicaciones en mis hitorias, mira 
                       mi seccion de historias de VT y de PUBLIGRAB para que veas algunas publicaciones,
                       dejo el enlace en la siguiente seción.\
                       \
-                      Si te gusta la música mi perfil de Spotify se encuentra abajo;
-                      tengo playlist publicas de Rock, Jazz, R&B, hip hop y más.\
+                      Si te gusta la música mi perfil de Spotify se encuentra en la sección de contatos; donde 
+                      tengo playlist´s publicas de Rock, Jazz, R&B, hip hop y más.\
                       \
                      ¡Saludos!`
     };
