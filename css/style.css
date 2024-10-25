@@ -82,7 +82,7 @@ h1 {
     font-size: 1.9rem;
     color: var(--secondary-color);
     margin-top: 1rem;
-    text-align: justify;
+    text-align: center;
 }
 
 #slogan {
