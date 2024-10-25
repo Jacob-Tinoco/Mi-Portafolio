@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: "Control alternativo de UR3e",
-            description: `En este proyecto, se desarrolló en los laboratorios de LANITED un control alternativo para el cobot UR3e de Universal Robots, un robot 
-                          colaborativo, proyecto a cargo del Dr. Iván García y supervisión de pruebas in-situ a cargo del Ing. Gabriel Salinas. LANITED es el Laboratorio 
+            description: `En este proyecto, se desarrolló en los laboratorios de LANITED un control alternativo para el cobot UR3e de Universal Robots, 
+                          proyecto a cargo del Dr. Iván García y supervisión de pruebas in-situ a cargo del Ing. Gabriel Salinas. LANITED es el Laboratorio 
                           Nacional de Tecnologías Digitales que fomenta la innovación en la industria 4.0 con la creación de métodos 
                           alternativos para cobots como uno de sus múltiples proyectos. El proyecto es crucial en la manufactura 
                           avanzada, ya que permite integrar el Internet de las 
