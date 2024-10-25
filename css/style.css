@@ -24,7 +24,7 @@ header {
 }
 @media (max-width: 768px) {
     header {
-        margin-bottom: 40px; /* Aumenta el margen en móviles */
+        margin-bottom: 50px; /* Aumenta el margen en móviles */
     }
 }
 nav ul {
