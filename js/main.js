@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "img/UR3e alternative-control.gif",
             createdDate: "Sep-2023",
             updatedDate: "Feb-2024"
-        },        
+        },
         {
             title: "IA, Simulación de peces Betta usando GAN´s",
             description:`La meta de esta IA es aprender el movimiento natural de los peces Betta, comenzando con la simulación de
@@ -73,10 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
                           en entornos virtuales.`,
             image: "img/IA simulation.gif",
             createdDate: "Oct-2024",
-            updatedDate: "Oct-2024"
-        }
-
-        
+            updatedDate: "Nov-2024"
+        },
     ];
     const hiddenProjects = [
         {
@@ -91,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
                           técnica en tiempo real para desarrolladores.`,
             image: "img/IA chat.gif",
             createdDate: "Oct-2024",
-            updatedDate: "Oct-2024"
+            updatedDate: "Nov-2024"
         },
         {
             title: "Reconocimiento Humano",
@@ -106,7 +104,19 @@ document.addEventListener('DOMContentLoaded', function() {
                            sino también optimizar el rendimiento en entornos dinámicos.`,
             image: "img/Firends.gif",
             createdDate: "Oct-2024",
-            updatedDate: "Oct-2024"
+            updatedDate: "Nov-2024" 
+        },
+
+        {
+            title: "Identificación y Seguimiento de Gestos y Humanos",
+            description: `Este proyecto utiliza las herramientas OpenCV, YOLO y Mediapipe para desarrollar un algoritmo 
+              que permita la identificación y seguimiento de gestos y personas en tiempo real. En proyectos anteriores 
+              se habló sobre YOLO y OpenCV mientras que Mediapipe facilita la detección y seguimiento preciso de gestos. 
+              Este preview busca ilustrar la implementación de detección y seguimiento de gestos y humanos. Fragmento del video
+              es propiedad del canal StatusSilver en Youtube`,
+            image: "img/Gesture.gif",
+            createdDate: "Oct-2024",
+            updatedDate: "Nov-2024"
         },
         {
             title: "BoomberMan en Python",
@@ -117,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
                           El objetivo es proporcionar un entorno interactivo y entretenido para los jugadores.`,
             image: "img/boomberman.gif",
             createdDate: "Mar-2019",
-            updatedDate: "Oct-2024"
+            updatedDate: "Nov-2024"
         },
         {
             title: "Ping pong con Pygame",
@@ -252,7 +262,8 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 mediaElement = `<img src="${project.image}" alt="${project.title}" class="project-image">`;
             }
-
+             // Crear la sección de herramientas
+            const toolsIcons = project.toolIcons.map(icon => `<img src="${icon}" class="tool-icon" alt="Tool Icon">`).join(' ');
             projectCard.innerHTML = `
                 ${mediaElement}
                 <div class="project-info">
@@ -267,6 +278,7 @@ document.addEventListener('DOMContentLoaded', function() {
             projectsGrid.appendChild(projectCard);
         });
     }
+    
 // Función para cargar los proyectos ocultos
 // Función para cargar los proyectos ocultos
 function loadHiddenProjects() {
