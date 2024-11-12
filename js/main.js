@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "img/UR3e alternative-control.gif",
             createdDate: "Sep-2023",
             updatedDate: "Feb-2024",
-            icons: ["img/C++-Logo.wine.png", "img/leap.png", "img/universalrobots.png"]
+            icons: ["img/C++.jpg", "img/leap.png", "img/universalrobots.png"]
         },        
         {
             title: "IA, Simulación de peces Betta usando GAN´s",
