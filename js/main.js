@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "img/IA chat.gif",
             createdDate: "Oct-2024",
             updatedDate: "Nov-2024",
-            icons: ["img/Python.jpg", "img/llama.png", "img/js.png"] // Añade los iconos aquí
+            icons: ["img/Python.png", "img/llama.png", "img/js.png"] // Añade los iconos aquí
         },
         {
             title: "Reconocimiento Humano",
