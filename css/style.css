@@ -73,7 +73,7 @@ nav ul li a {
 }
 
 h1 {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     color: var(--secondary-color);
     margin-bottom: 2rem;
     text-align: center;
@@ -84,7 +84,7 @@ h1 {
     height: auto;
 }
 #rol { /* Ing. Mecatrónico orientado a Programación y diseño en CAD.*/
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--secondary-color);
     margin-top: 1rem;
     text-align: center;
