@@ -24,7 +24,7 @@ header {
 }
 @media (max-width: 768px) {
     header {
-        margin-bottom: 500px; /* Aumenta el margen en móviles */
+        margin-bottom: 100px; /* Aumenta el margen en móviles */
     }
 }
 nav ul {
@@ -585,11 +585,11 @@ footer {
     }
 
     #hero h1 {
-        font-size: 2.5rem; /* Ajustar tamaño de fuente */
+        font-size: 1.2rem; /* Ajustar tamaño de fuente */
     }
 
     #slogan {
-        font-size: 1.2rem; /* Ajustar tamaño de fuente */
+        font-size: 0.8rem; /* Ajustar tamaño de fuente */
     }
 
     .sobre-mi-container {
@@ -614,10 +614,10 @@ footer {
     }
 
     #hero h1 {
-        font-size: 2rem; /* Ajustar tamaño de fuente */
+        font-size: 1.2rem; /* Ajustar tamaño de fuente */
     }
 
     #slogan {
-        font-size: 1rem; /* Ajustar tamaño de fuente */
+        font-size: 0.8rem; /* Ajustar tamaño de fuente */
     }
 }
