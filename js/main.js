@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: "Implementación de 3 dispositivos controller en una computadora",
             description: `En este proyecto se desarrolló un algoritmo para el seguimiento de 13 gestos estáticos utilizando tres sensores LMC 
-                          (Leap Motion Controller), que detectan objsetos a través de señales de luz infraroja. El uso de múltiples sensores en una computadora 
+                          (Leap Motion Controller), que detectan objetos a través de señales de luz infraroja. El uso de múltiples sensores en una computadora 
                           está limitado por restricciones de conectividad USB. Cada sensor tiene un alcance de 600 mm en los ejes X y Z, y 800 mm en 
                           el eje Y. Al combinar tres sensores, se amplía el campo de visión en un 266% y se incrementa la confianza de lectura en un 12%, 
                           mejorando así la precisión y versatilidad del seguimiento de gestos. La sección del preview pertenece a un video de propiedad intelectual de  CIDESI.`,
