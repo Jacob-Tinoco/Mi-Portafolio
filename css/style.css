@@ -1,0 +1,636 @@
+:root {
+    --primary-color: #4a4a4a;
+    --secondary-color: #ffffff;
+    --background-color: #f0f0f0;
+}
+
+body {
+    font-family: 'Your-Font', 'Times New Roman', Times, serif, sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6; /* interlineado*/
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem 0;
+    z-index: 1000;
+}
+@media (max-width: 768px) {
+    header {
+        margin-bottom: 100px; /* Aumenta el margen en móviles */
+    }
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap; /* Mantener en una sola línea en pantallas grandes */
+    font-size: 1.4rem;/* Tamaño de fuente de los encabezados*/
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Media Query para Pantallas Pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en móviles */
+    }
+    
+    nav ul li {
+        flex: 1 1 100%; /* Cada enlace ocupa el 100% en pantallas pequeñas */
+        margin: 0.5rem 0; /* Espaciado entre los enlaces */
+        text-align: center; /* Centrar texto */
+    }
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#logo {
+    width: 250px;
+    height: auto;
+}
+#rol { /* Ing. Mecatrónico orientado a Programación y diseño en CAD.*/
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    #rol {
+        text-align: center; /* Centra el texto en móviles */
+    }
+}
+
+#slogan {/* Un placer conocerte*/
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border-style:outset;
+}
+.contact-info-button {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info-button .email-icon {
+    margin-right: auto; /* Esto empuja el icono hacia la izquierda */
+}
+
+.contact-info-button span {
+    margin-left: 8px; /* Ajusta el espacio entre el icono y el texto */
+}
+
+
+.email-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.contact-info span {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Estilos para la sección de proyectos */
+#proyectos {
+    padding: 4em 2rem;
+    background-color: rgb(68, 93, 116);
+    text-align: center;
+}
+
+#proyectos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 2.4rem;
+}
+
+.projects-grid {
+    display: grid;
+    /* :grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem; /* Añadir margen inferior */
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido principal y el pie de página estén separados */
+    height: 100%; /* Asegura que la tarjeta ocupe toda la altura disponible */
+    background-color: rgb(21, 16, 25);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px #364659;
+    transition: transform 0.3s ease;
+}
+
+.project-info {
+    padding: 1.9rem;
+    text-align: left;
+    /*flex-grow: 1; /* Permite que esta sección crezca para ocupar el espacio disponible */
+}
+
+.project-card:hover {
+    transform: translateY(-15px);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+    
+}
+
+.project-dates {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content:space-between;
+    flex-grow: 1;
+}
+.project-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-icons img {
+    width: 24px; /* Tamaño pequeño */
+    height: 24px;
+    object-fit: contain;
+}
+
+
+/* Estilo para proyectos ocultos*/
+#hidden-projects {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+}
+
+#hidden-projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2.4rem;
+}
+.hidden-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.hidden-projects .project-card {
+    background-color: rgb(21, 16, 25);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgb(26, 16, 25);
+    transition: transform 0.3s ease;
+}
+
+.hidden-projects .project-card:hover {
+    transform: translateY(-15px);
+}
+
+.hidden-projects .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hidden-projects .project-info {
+    padding: 1.9rem;
+    text-align: left;
+}
+
+.hidden-projects .project-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.hidden-projects .project-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hidden-projects .project-dates {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.project-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-icons img {
+    width: 24px; /* Tamaño pequeño */
+    height: 24px;
+    object-fit: contain;
+}
+
+
+/* Estilos para el botón de mostrar más proyectos */
+.btn-show-more {
+    display: block;
+    margin: 2rem auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: rgb(139, 139, 139) 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.btn-show-more:hover {
+    background-color: black;
+}
+
+/* Estilos para el botón de mostrar más proyectos */
+.btn-show-less {
+    display: block;
+    margin: 2rem auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: rgb(139, 139, 139) 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.btn-show-less:hover {
+    background-color: black;
+}
+
+
+
+/* Estilos para la sección de trayectoria */
+#trayectoria {
+    padding: 4rem 2rem;
+    background-color: rgb(54, 70, 89);
+}
+
+#trayectoria h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2.4rem;
+    
+}
+
+.trayectoria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.trayectoria-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px #364659; 
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.trayectoria-card:hover {
+    transform: translateY(-15px);
+}
+
+.trayectoria-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.trayectoria-info {
+    text-align: left;
+}
+
+.trayectoria-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: rgba(12, 16, 25, 0.9);
+    text-align: center;
+}
+
+.trayectoria-description {
+    font-size: 1.2rem;
+    color: rgba(16, 12, 25, 0.9);
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.trayectoria-dates {
+    font-size: 1rem;
+    color: rgba(29, 29, 29, 0.9);
+    display: flex;
+    justify-content: center
+}
+
+/* Estilos para la sección Sobre mí */
+/* Estilos para la sección Sobre mí */
+#sobre-mi {
+    padding: 4rem 2rem;
+    background-color: rgb(68, 93, 116);
+    text-align: center;
+}
+
+#sobre-mi h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 2.4rem;
+}
+
+.sobre-mi-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre-mi-foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 2rem;
+    align-content: center;
+}
+
+.sobre-mi-info {
+    text-align: left;
+}
+
+.sobre-mi-info h3 {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0.5rem;
+}
+
+.sobre-mi-info p {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+}
+.habilidades {
+    margin-top: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.habilidades h4 {
+    font-size: 2rem; /* Tamaño de la letra de "Habilidades" */
+    margin-bottom: 1rem; /* Espaciado inferior */
+    color: rgb(255, 255, 255);
+}
+
+.habilidad {
+    margin-bottom: 1.5rem;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.iconos img {
+    width: 150px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    margin: 0 10px; /* Espaciado entre iconos */
+}
+
+.habilidades-horizontal {
+    display: flex;
+    justify-content: space-around; /* Distribuye el espacio entre las habilidades */
+    margin-top: 1rem; /* Espaciado superior */
+}
+
+.habilidades-horizontal .habilidad {
+    flex: 1; /* Permite que cada habilidad ocupe espacio igual */
+    text-align: center; /* Centra el texto */
+}
+
+.habilidad h5 {
+    font-size: 1.8rem; /* Tamaño de la letra de los subtítulos */
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+}
+/*''''''''''''''''''''''''''''''''''''*/
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.qr-instagram {
+    margin-bottom: 1rem;
+}
+
+.qr-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.qr-image:hover {
+    transform: scale(1.1);
+}
+
+.btn-download-cv {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: rgb(139, 139, 139) 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.btn-download-cv:hover {
+    background-color: rgb(166, 60, 97);
+}
+
+/* ... (tus estilos existentes) ... */
+
+/* ... (tus estilos existentes) ... */
+#contactos {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 4rem 2rem;
+    background-color: rgb(21, 16, 25);
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .contactos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;  /* Aumentamos el espacio entre las imÃ¡genes */
+  }
+  
+  .contact-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);  /* AsegÃºrate de tener definido --text-color en tus variables CSS */
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    transform: scale(1.05);  /* Efecto de zoom suave al pasar el mouse */
+  }
+  
+  .qr-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;  /* Mantiene la proporciÃ³n de la imagen */
+    border-radius: 10px;  /* Bordes redondeados, ajusta segÃºn prefieras */
+    margin-bottom: 0.5rem;  /* Espacio entre la imagen y el texto */
+  }
+  
+  /* Estilo para el texto debajo de la imagen */
+  .contact-button span {
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  /* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+    .hidden-projects{
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+
+    .trayectoria-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+
+    #hero h1 {
+        font-size: 1.8rem; /* Ajustar tamaño de fuente */
+    }
+
+    #slogan {
+        font-size: 1rem; /* Ajustar tamaño de fuente */
+    }
+
+    .sobre-mi-container {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar contenido */
+    }
+
+    .sobre-mi-foto {
+        margin-bottom: 1rem; /* Espacio inferior */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    }
+    .hidden-projects{
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    }
+    .trayectoria-grid {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    }
+
+    #hero h1 {
+        font-size: 1.8rem; /* Ajustar tamaño de fuente */
+    }
+
+    #slogan {
+        font-size: 0.8rem; /* Ajustar tamaño de fuente */
+    }
+}
