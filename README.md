@@ -4,7 +4,7 @@
 
 ## Autores
 
-- **Jacob Tinoco** - *Repositorio de educación* - [Jacob-Tinoco](https://github.com/Jacob-Tinoco)
+- **Jacob Tinoco** - *Repositorio de Portafolio profesional* - [Jacob-Tinoco](https://github.com/Jacob-Tinoco)
 
 ## ¿Qué es este proyecto?
 
