@@ -1,6 +1,6 @@
 # Bienvenido a Mi Portafolio
 
-¡Hola! Bienvenido, este es un proyecto sobre mi perfil profesional con el portafolio: [jacobtinoco.com](http://jacobtinoco.com).
+¡Hola! Bienvenido, este es un proyecto sobre mi perfil profesional: [jacobtinoco.com](http://jacobtinoco.com).
 
 ## ¿Qué es este proyecto?
 
