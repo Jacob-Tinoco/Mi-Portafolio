@@ -1,7 +1,8 @@
 # Bienvenido a Mi Portafolio
 
 ¡Hola! Bienvenido, este es un proyecto sobre mi perfil profesional: [jacobtinoco.com](http://jacobtinoco.com).
-Soy Técnico Informatico e Ingeniero Mecatrónico, me considero un programador hábil con 3 años de experiencia en Python y C++. Competente en entornos individuales y de equipo, con experiencia en investigación en Inteligencia Artificial y Visión por Computador. Utilizado herramientas como Amazon Alexa Skills, OpenCV, Ollama, Mediapipe, y TensorFlow, Numpy, Matplot. Hábil en comunicación social, desarrollo interpersonal y trabajo remoto. Diseño productos y herramientas de uso personal en Solidworks, Blender y aplico estos modelados en Unity por mis interese en Realidad Aumentada (VR). Soy responsable, autodidacta, con un gran interés en el conocimiento artístico, filosófico y científico.
+
+Me considero un programador hábil con 3 años de experiencia en Python y C++. Competente en entornos individuales y de equipo, con experiencia en investigación en Inteligencia Artificial y Visión por Computador. Utilizado herramientas como Amazon Alexa Skills, OpenCV, Ollama, Mediapipe, y TensorFlow, Numpy, Matplot. Hábil en comunicación social, desarrollo interpersonal y trabajo remoto. Diseño productos y herramientas de uso personal en Solidworks, Blender y aplico estos modelados en Unity por mis interese en Realidad Aumentada (VR). Soy responsable, autodidacta, con un gran interés en el conocimiento artístico, filosófico y científico.
 
 
 ## Autores
