@@ -540,9 +540,9 @@ footer {
     background-color: rgb(166, 60, 97);
 }
 
-/* ... (tus estilos existentes) ... */
+/* ... (estilos existentes) ... */
 
-/* ... (tus estilos existentes) ... */
+/* ... (estilos existentes) ... */
 #contactos {
     color: rgba(255, 255, 255, 0.9);
     padding: 4rem 2rem;
@@ -563,7 +563,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);  /* AsegÃºrate de tener definido --text-color en tus variables CSS */
+    color: rgba(255, 255, 255, 0.9);  
     transition: transform 0.3s ease;
   }
   
