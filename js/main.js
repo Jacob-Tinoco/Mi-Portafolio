@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description:`Desarrollé habilidades de Backend como control de versiones, creación de mis propias API's y comprensión de API's de terceros, pensamiento analítico,
                          organización de proyectos, habilidades de identificación y resolución de problemas, capacidades de proyectos escalables. Hice uso de mi dominio en 
                          Python con las siguientes librerías: OpenCV, Numpy, Pandas,  Mediapipe, YOLO en sus versiones V3, V5, V11; también desarrollé habilidades en el uso 
-                         de Tensorflow, Keras. El objetivo es desarrollar un algoritmo que permita la identificación y seguimiento de gestos y personas en real tiempo real
+                         de Tensorflow, Keras. El objetivo es desarrollar un algoritmo que permita la identificación y seguimiento de gestos y personas en tiempo real
                          y luego llevarlo a la interpretación de LSM. El fragmento del video es propiedad del canal StatusSilver en Youtube`,         
             image: "img/Gesture.gif",
             createdDate: "Oct-2024",
