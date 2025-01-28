@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: "Control alternativo de UR3e",
             description: `En este proyecto, se desarrolló un control alternativo para el Robot Colaborativo UR3e de Universal Robots en los laboratorios de LANITED,
-                          dirigido por el Dr. Iván García y supervisado en pruebas in-situ por el Ing. Gabriel Salinas. LANITED, el Laboratorio Nacional de Tecnologías Digitales, fomenta 
+                          liderado por el Dr. Iván García y supervisado en pruebas in-situ por el Ing. Gabriel Salinas. LANITED, el Laboratorio Nacional de Tecnologías Digitales, fomenta 
                           la innovación en la industria 4.0. Este proyecto faborece en la manufactura avanzada, ya que integra 
                           el Internet de las Cosas (IoT), mejorando la eficiencia y flexibilidad en los procesos productivos. Promueve una colaboración efectiva entre humanos 
                           y máquinas, optimizando la producción y reduciendo costos. La sección del preview pertenece a un video de propiedad intelectual de CIDESI.`,
