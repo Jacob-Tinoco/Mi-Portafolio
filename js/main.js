@@ -37,16 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Datos de los proyectos
     const projects = [
         {
-            title: "Implementación de 3 dispositivos controller en una computadora",
-            description: `Implemente mis habilidades de programación en Python, (dominando librerías como: Pandas, NumPy, matplotlib), para el procesamiento de datos, 
-                          y uso del lenguaje C++ para programar dichos sensores, dominando en C++ la API de Leap Motion para desarrolladores. Realice actividades adicionales 
-                          de documentación de mis procesos, reportes semanales e informes mensuales, trabajando en equipo a través de una comunicación efectiva en reuniones semanales 
-                          y comunicación constante con los miembros del equipo. Al combinar tres sensores, el campo de visión se amplía en un 266% y la confianza de lectura se incrementa en un 12%.
-                          La sección del preview pertenece a un video de propiedad intelectual de  CIDESI.`,
-            image: "img/LMC-demostracion.gif",
-            /*createdDate: "Oct-2023",*/
-            updatedDate: "Ene-2024",
-            icons: ["img/leap.png", "img/C++.jpg","img/numpy.png"]
+            title: "IA, Asistente virtual basado en chat GPT para Dev's",
+            description:`Este proyecto se centra en el desarrollo de un asistente virtual basado en Chat GPT, utilizando modelos de código abierto proporcionados por Ollama.
+                         Implementé los lenguajes Pyhton, para la programación interna de la aplicación, javascript para la interfaz gráfica. Aprendí a usar Django y Flask 
+                         para crear mis API's, NLTK y SpaCy para el procesamiento NLP y análisis de texto. Utilicé la documentación para desarrolladores de Ollama e implementé 
+                         el modelo PythonCoder V2. En el camino mejoré mis habilidades de documentación de proyectos, desarrollé mis habilidades de prueba y validación y me adapté 
+                         a nuevas herramientas.`,
+            image: "img/IA chat.gif",
+            createdDate: "Oct-2024",
+            updatedDate: "Ene-2025",
+            icons: ["img/Python.png", "img/llama.png", "img/js.png"] // Añade los iconos aquí
         },
         {
             title: "Control alternativo de UR3e",
@@ -76,16 +76,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const hiddenProjects = [
         {
-            title: "IA, Asistente virtual basado en chat GPT para Dev's",
-            description:`Este proyecto se centra en el desarrollo de un asistente virtual basado en Chat GPT, utilizando modelos de código abierto proporcionados por Ollama.
-                         Implementé los lenguajes Pyhton, para la programación interna de la aplicación, javascript para la interfaz gráfica. Aprendí a usar Django y Flask 
-                         para crear mis API's, NLTK y SpaCy para el procesamiento NLP y análisis de texto. Utilicé la documentación para desarrolladores de Ollama e implementé 
-                         el modelo PythonCoder V2. En el camino mejoré mis habilidades de documentación de proyectos, desarrollé mis habilidades de prueba y validación y me adapté 
-                         a nuevas herramientas.`,
-            image: "img/IA chat.gif",
-            createdDate: "Oct-2024",
-            updatedDate: "Ene-2025",
-            icons: ["img/Python.png", "img/llama.png", "img/js.png"] // Añade los iconos aquí
+            title: "Implementación de 3 dispositivos controller en una computadora",
+            description: `Implemente mis habilidades de programación en Python, (dominando librerías como: Pandas, NumPy, matplotlib), para el procesamiento de datos, 
+                          y uso del lenguaje C++ para programar dichos sensores, dominando en C++ la API de Leap Motion para desarrolladores. Realice actividades adicionales 
+                          de documentación de mis procesos, reportes semanales e informes mensuales, trabajando en equipo a través de una comunicación efectiva en reuniones semanales 
+                          y comunicación constante con los miembros del equipo. Al combinar tres sensores, el campo de visión se amplía en un 266% y la confianza de lectura se incrementa en un 12%.
+                          La sección del preview pertenece a un video de propiedad intelectual de  CIDESI.`,
+            image: "img/LMC-demostracion.gif",
+            /*createdDate: "Oct-2023",*/
+            updatedDate: "Ene-2024",
+            icons: ["img/leap.png", "img/C++.jpg","img/numpy.png"]
         },
         {
             title: "Reconocimiento Humano",
