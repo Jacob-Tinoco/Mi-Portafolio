@@ -361,7 +361,7 @@ footer {
 
 .trayectoria-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -430,7 +430,7 @@ footer {
 
 .hidden-trayectoria {
     display: grid;
-    grid-template-columns: repeat(4, minmax(300px, 1fr)); /* Hacer la cuadrícula coherente, usa auto-fit para ajustar en automatico */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Hacer la cuadrícula coherente, usa auto-fit para ajustar en automatico */
     gap: 2rem; /* Mantener el mismo espacio entre elementos */
 }
 
