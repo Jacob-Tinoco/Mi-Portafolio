@@ -39,6 +39,7 @@ JT
 ## Historial de Versiones
 - Portafolio Profesional V-5.2.3 - Repositorio de Portaolio personal
   No se permite el copyrigth y distribución de infromación
+- Ultima actuañización: 11/03/25, se actualizo el CV
 
 ## Licencia
 Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
