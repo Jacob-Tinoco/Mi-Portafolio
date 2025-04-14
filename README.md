@@ -42,7 +42,7 @@ JT
 - Ultima actuañización: 13/04/25, se actualizo el CV
 
 ## Licencia
-Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está licenciado bajo la Creative Commons Zero v1.0 Universal - consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ## Contacto
 Puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/jacob-t-329675258/) o en [Instagram](https://www.instagram.com/jknc.0/).
