@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', function() {
             icons: ["img/Google.png"]
         },
         {
-            title: "Python AI Developer",
+            title: "AI Developer",
             description: `Actualmente trabajo en Maxima Apparel, la cual es una empresa de producción y diseño de moda, tanto deportiva como causal, dentro 
                           de mis funciones principales es hacer procesos automatizados, desarrollos de modelos AI con Visión Artificial de tipo RNN, CNN, entre otros.
                           Durante el primer periodo de trabajo, logre reducir 7 horas de trabajo por semana al departamento de Finanzas y RH; entrene 3 modelos 
