@@ -115,6 +115,10 @@ footer {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     border-style:outset;
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 900;
 }
 .contact-info-button {
     display: flex;
