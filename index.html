@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob Tinoco - Portfolio</title>
     <!-- Medidas de seguridad -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self';">
+     <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self';">-->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -135,7 +135,60 @@
             </a> 
         </div>
     </footer>
-    
+        <!-- Chatbot n8n -->
+    <!-- Estilos del chat n8n -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+    <!-- Elemento destino para el chat (puedes ponerlo donde gustes, por ejemplo, al final del body) -->
+    <div id="n8n-chat"></div>
+
+    <!-- Script para el chat (usa type="module") -->
+    <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+    webhookUrl: 'http://localhost:5678/webhook/4c766245-dd9a-4981-b1b7-c10a118cf43b/chat',
+    target: '#n8n-chat',
+    mode: 'window',
+    avatar: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f916.png', // Tu avatar de bot
+    style: {
+        '--n8n-chat-bottom': '100px',
+        '--n8n-chat-right': '40px',
+        '--n8n-chat-title-bg': '#18191c',       // Sin azul, mismo fondo que el chat
+        '--n8n-chat-title-color': '#f3f3f3',    // Blanco suave
+        '--n8n-chat-bg': '#18191c',             // Fondo oscuro general
+        '--n8n-chat-bubble-bg': '#232323',      // Burbuja usuario (oscura)
+        '--n8n-chat-bubble-color': '#fff',
+        '--n8n-chat-bubble-bot-bg': '#3d3dff1a', // Burbuja bot azul claro semitransparente
+        '--n8n-chat-bubble-bot-color': '#333',   // Texto bot más oscuro
+        '--n8n-chat-bubble-radius': '50px',     // ¡Burbujas más redondeadas!
+        '--n8n-chat-bubble-padding': '12px 18px',
+        '--n8n-chat-input-bg': '#232323',
+        '--n8n-chat-input-color': '#fff',
+        '--n8n-chat-primary-color': '#9a68ff',   // Botón y acentos lavanda/morado
+        '--n8n-chat-avatar-size': '32px',        // Tamaño de avatar
+        '--n8n-chat-title-font-size': '1.1em',   // Más amigable
+        '--n8n-chat-font-family': 'Inter, "Segoe UI", Arial, sans-serif',
+        '--n8n-chat-bubble-font-size': '1em'
+    },
+    initialMessages: [
+        "¡Hola! 👋",
+        "Soy **Maxi 🤖**. ¿En qué puedo ayudarte hoy?"
+    ],
+    i18n: {
+        en: {
+        title: 'Maxi 🤖',
+        subtitle: 'Gracias por visitar mi Portafolio Profesional',
+        inputPlaceholder: 'Escribe tu mensaje...',
+        getStarted: 'Iniciar conversación',
+        }
+    }
+    });
+
+    </script>
+
     <script src="js/main.js"></script>
 </body>
 </html>
+:
+
