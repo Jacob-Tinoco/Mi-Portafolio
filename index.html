@@ -136,10 +136,10 @@
         </div>
     </footer>
     <!-- Elemento destino para el chat (puedes ponerlo antes de </body>) -->
+    <link href="assets/n8n-chat/style.css" rel="stylesheet" />
     <div id="n8n-chat"></div>
     <script type="module">
-    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-    
+      import { createChat } from './assets/n8n-chat/chat.bundle.es.js';
     createChat({
       webhookUrl: 'https://aperezmaximaapparel.app.n8n.cloud/webhook/f0ec84a0-b089-48cc-a8e0-c78a6fb58809/chat',
       target: '#n8n-chat',
