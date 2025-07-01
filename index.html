@@ -135,53 +135,52 @@
             </a> 
         </div>
     </footer>
-    <!-- Elemento destino para el chat (puedes ponerlo antes de </body>) -->
-    <link href="assets/n8n-chat/style.css" rel="stylesheet" />
-    <div id="n8n-chat"></div>
-    <script type="module">
-      import { createChat } from './assets/n8n-chat/chat.bundle.es.js';
-    createChat({
-      webhookUrl: 'https://aperezmaximaapparel.app.n8n.cloud/webhook/f0ec84a0-b089-48cc-a8e0-c78a6fb58809/chat',
-      target: '#n8n-chat',
-      mode: 'window',
-      avatar: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f916.png',
-      style: {
-        '--n8n-chat-bottom': '100px',
-        '--n8n-chat-right': '40px',
-        '--n8n-chat-title-bg': '#18191c',
-        '--n8n-chat-title-color': '#f3f3f3',
-        '--n8n-chat-bg': '#18191c',
-        '--n8n-chat-bubble-bg': '#232323',
-        '--n8n-chat-bubble-color': '#fff',
-        '--n8n-chat-bubble-bot-bg': '#3d3dff1a',
-        '--n8n-chat-bubble-bot-color': '#333',
-        '--n8n-chat-bubble-radius': '50px',
-        '--n8n-chat-bubble-padding': '12px 18px',
-        '--n8n-chat-input-bg': '#232323',
-        '--n8n-chat-input-color': '#fff',
-        '--n8n-chat-primary-color': '#9a68ff',
-        '--n8n-chat-avatar-size': '32px',
-        '--n8n-chat-title-font-size': '0.5em',
-        '--n8n-chat-font-family': 'Inter, "Segoe UI", Arial, sans-serif',
-        '--n8n-chat-bubble-font-size': '1em'
-      },
-      initialMessages: [
-        "¡Hi! 👋",
-        "I'm <b>Maxi 🤖</b>. How can I help you today?",
-      ],
-      i18n: {
-        en: {
-          title: 'Maxi 🤖',
-          subtitle: 'Thank you for visiting my chat room.',
-          inputPlaceholder: 'Send a message',
-          getStarted: 'Start',
-        }
+<!-- Chatbot n8n Widget -->
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+<div id="n8n-chat"></div>
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://aperezmaximaapparel.app.n8n.cloud/webhook/f0ec84a0-b089-48cc-a8e0-c78a6fb58809/chat',
+    target: '#n8n-chat',
+    mode: 'window',
+    avatar: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f916.png',
+    style: {
+      '--n8n-chat-bottom': '100px',
+      '--n8n-chat-right': '40px',
+      '--n8n-chat-title-bg': '#18191c',
+      '--n8n-chat-title-color': '#f3f3f3',
+      '--n8n-chat-bg': '#18191c',
+      '--n8n-chat-bubble-bg': '#232323',
+      '--n8n-chat-bubble-color': '#fff',
+      '--n8n-chat-bubble-bot-bg': '#3d3dff1a',
+      '--n8n-chat-bubble-bot-color': '#333',
+      '--n8n-chat-bubble-radius': '50px',
+      '--n8n-chat-bubble-padding': '12px 18px',
+      '--n8n-chat-input-bg': '#232323',
+      '--n8n-chat-input-color': '#fff',
+      '--n8n-chat-primary-color': '#9a68ff',
+      '--n8n-chat-avatar-size': '32px',
+      '--n8n-chat-title-font-size': '0.5em',
+      '--n8n-chat-font-family': 'Inter, "Segoe UI", Arial, sans-serif',
+      '--n8n-chat-bubble-font-size': '1em'
+    },
+    initialMessages: [
+      "¡Hi! 👋",
+      "I'm <b>Maxi 🤖</b>. How can I help you today?",
+    ],
+    i18n: {
+      en: {
+        title: 'Maxi 🤖',
+        subtitle: 'Thank you for visiting my chat room.',
+        inputPlaceholder: 'Send a message',
+        getStarted: 'Start',
       }
-    });
-    </script>
-
-
-    </script>
+    }
+  });
+</script>
 
     <script src="js/main.js"></script>
 </body>
