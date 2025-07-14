@@ -150,23 +150,32 @@
     style: {
       '--n8n-chat-bottom': '100px',
       '--n8n-chat-right': '40px',
-      '--n8n-chat-title-bg': '#18191c',
-      '--n8n-chat-title-color': '#f3f3f3',
-      '--n8n-chat-bg': '#18191c',
-      '--n8n-chat-bubble-bg': '#232323',
-      '--n8n-chat-bubble-color': '#fff',
-      '--n8n-chat-bubble-bot-bg': '#3d3dff1a',
-      '--n8n-chat-bubble-bot-color': '#333',
+      '--n8n-chat-title-bg': '#000',         // Barra superior NEGRA
+      '--n8n-chat-title-color': '#fff',      // Texto blanco
+      '--n8n-chat-bg': '#000',               // Fondo NEGRO puro
+      '--n8n-chat-bubble-bg': '#18191c',     // Globo usuario: gris-negruzco
+      '--n8n-chat-bubble-color': '#fff',     // Texto de usuario blanco
+      '--n8n-chat-bubble-bot-bg': '#222',    // Globo bot: casi negro
+      '--n8n-chat-bubble-bot-color': '#fff', // Texto de bot blanco
       '--n8n-chat-bubble-radius': '50px',
       '--n8n-chat-bubble-padding': '12px 18px',
-      '--n8n-chat-input-bg': '#232323',
-      '--n8n-chat-input-color': '#fff',
-      '--n8n-chat-primary-color': '#9a68ff',
+      '--n8n-chat-input-bg': '#232323',      // Input: gris oscuro
+      '--n8n-chat-input-color': '#fff',      // Input: texto blanco
+      '--n8n-chat-primary-color': '#000',    // Botón de enviar, acento: negro puro
       '--n8n-chat-avatar-size': '32px',
-      '--n8n-chat-title-font-size': '0.5em',
+      '--n8n-chat-title-font-size': '0.9em',
       '--n8n-chat-font-family': 'Inter, "Segoe UI", Arial, sans-serif',
-      '--n8n-chat-bubble-font-size': '1em'
+      '--n8n-chat-bubble-font-size': '1em',
+    
+      // EXTRAS para asegurar todo negro:
+      '--n8n-chat-subtitle-bg': '#000',      // Fondo del subtitulo (si lo hay)
+      '--n8n-chat-subtitle-color': '#fff',   // Texto subtitulo blanco
+      '--n8n-chat-send-bg': '#000',          // Botón enviar negro
+      '--n8n-chat-send-color': '#fff',       // Botón enviar texto blanco
+      '--n8n-chat-close-bg': '#000',         // Botón cerrar negro
+      '--n8n-chat-close-color': '#fff'       // Botón cerrar texto blanco
     },
+
     initialMessages: [
       "¡Bienvenido a Pro Standard México! 👋",
       "🙋‍♂️ Soy Maxi, tu asistente virtual impulsado por inteligencia artificial",
