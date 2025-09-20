@@ -77,92 +77,214 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const hiddenProjects = [
         {
-            title: "IA, Identificación de gestos e indice de confianza para control por Visión Artificial",
-            description:`Este proyecto se centra en el desarrollo de un un algoritmo para seguimiento e identificación de gestos, especificamente se concentra en 
-                         conocer la confianza de los dedos extendidos y la confianza en el gesto reconocido: donde para el dedo 0 (pulgar) debe de ser entre el 21%-30%
-                         para los dedos 2-4 (indice a meñique) es del 85% para ser validos, y el gesto debe tener un indice de confianza de al menos 85% como validación
-                         para imprimir el nombre del gesto que se reconocio. Implementé los lenguajes Pyhton, para la programación del backend y tambien para la interfaz gráfica.
-                         Aprendí a mejorar mis ahbilidades con Mediapipe, Tensorflow y OpenCV.`,
-            image: "img/gestur_detect.gif",
-            createdDate: "Ene-2024",
-            updatedDate: "Mar-2025",
-            icons: ["img/Opencv.png", "img/mediapipe.png", "img/tensorflow.png"] // Añade los iconos aquí
+          title: "IA, Identificación de gestos e índice de confianza",
+          description: `Este proyecto desarrolló un algoritmo de visión artificial para identificar y validar gestos
+                        mediante el cálculo de índices de confianza. Se establecieron parámetros específicos: el pulgar
+                        debía registrar entre 21% y 30%, mientras que los dedos índice a meñique requerían un 85%. El
+                        gesto completo se validaba solo si alcanzaba al menos un 85% de confianza. El sistema se
+                        programó en Python, tanto en el backend como en la interfaz gráfica, y utilizó librerías como
+                        Mediapipe, Tensorflow y OpenCV. El objetivo fue ofrecer precisión y confiabilidad en la
+                        interpretación de gestos humanos para aplicaciones de interacción hombre-máquina. Durante el
+                        desarrollo se reforzaron competencias en validación de métricas, integración de librerías de visión
+                        artificial y diseño de interfaces gráficas prácticas, logrando un sistema que combina exactitud,
+                        escalabilidad y facilidad de integración en escenarios reales.`,
+          image: "img/gestur_detect.gif",
+          createdDate: "Ene-2024",
+          updatedDate: "Mar-2025",
+          icons: ["img/Opencv.png", "img/mediapipe.png", "img/tensorflow.png"]
         },
         {
-            title: "IA, Asistente virtual basado en chat GPT para Dev's",
-            description:`Este proyecto se centra en el desarrollo de un asistente virtual basado en Chat GPT, utilizando modelos de código abierto proporcionados por Ollama.
-                         Implementé los lenguajes Pyhton, para la programación interna de la aplicación, javascript para la interfaz gráfica. Aprendí a usar Django y Flask 
-                         para crear mis API's, NLTK y SpaCy para el procesamiento NLP y análisis de texto. Utilicé la documentación para desarrolladores de Ollama e implementé 
-                         el modelo PythonCoder V2. En el camino mejoré mis habilidades de documentación de proyectos, desarrollé mis habilidades de prueba y validación y me adapté 
-                         a nuevas herramientas.`,
-            image: "img/IA chat.gif",
-            createdDate: "Oct-2024",
-            updatedDate: "Ene-2025",
-            icons: ["img/Python.png", "img/llama.png", "img/js.png"] // Añade los iconos aquí
+          title: "IA, Asistente virtual con Chat GPT para Dev's",
+          description: `Este asistente virtual fue diseñado para apoyar a desarrolladores utilizando modelos de
+                        lenguaje abiertos de Ollama. El backend se implementó en Python y la interfaz en JavaScript,
+                        empleando frameworks como Django y Flask para crear APIs. Se aplicaron técnicas de
+                        procesamiento de lenguaje natural con NLTK y SpaCy, y se integró el modelo PythonCoder V2
+                        para mejorar la interpretación de consultas técnicas. El proyecto fortaleció habilidades en
+                        documentación, validación de pruebas y adaptación a nuevos entornos de NLP. También permitió
+                        explorar la escalabilidad de asistentes inteligentes y su integración en entornos de desarrollo
+                        colaborativo. El resultado fue un sistema capaz de responder preguntas técnicas, guiar flujos de
+                        trabajo y demostrar cómo los modelos de lenguaje pueden aplicarse de manera efectiva en el
+                        ámbito del desarrollo de software y automatización.`,
+          image: "img/IA chat.gif",
+          createdDate: "Oct-2024",
+          updatedDate: "Ene-2025",
+          icons: ["img/Python.png", "img/llama.png", "img/js.png"]
         },
         {
-            title: "Implementación de 3 dispositivos controller en una computadora",
-            description: `Implemente mis habilidades de programación en Python, (dominando librerías como: Pandas, NumPy, matplotlib), para el procesamiento de datos, 
-                          y uso del lenguaje C++ para programar dichos sensores, dominando en C++ la API de Leap Motion para desarrolladores. Realice actividades adicionales 
-                          de documentación de mis procesos, reportes semanales e informes mensuales, trabajando en equipo a través de una comunicación efectiva en reuniones semanales 
-                          y comunicación constante con los miembros del equipo. Al combinar tres sensores, el campo de visión se amplía en un 266% y la confianza de lectura se incrementa en un 12%.
-                          La sección del preview pertenece a un video de propiedad intelectual de  CIDESI.`,
-            image: "img/LMC-demostracion.gif",
-            /*createdDate: "Oct-2023",*/
-            updatedDate: "Ene-2024",
-            icons: ["img/leap.png", "img/C++.jpg","img/numpy.png"]
+          title: "Implementación de 3 dispositivos controller",
+          description: `El proyecto consistió en integrar tres Leap Motion Controllers en una misma computadora,
+                        ampliando el campo de visión en un 266% y mejorando la precisión de lectura en un 12%. La
+                        programación de los sensores se realizó en C++ mediante la API oficial de Leap Motion, mientras
+                        que Python, con librerías como Pandas, NumPy y Matplotlib, se usó para analizar y procesar los
+                        datos recopilados. Además, se documentaron procesos, se generaron reportes semanales e
+                        informes mensuales, y se fortaleció la comunicación dentro del equipo. El trabajo unió la
+                        programación de bajo nivel con el análisis avanzado de datos en un entorno experimental,
+                        ofreciendo un sistema escalable para investigación y aplicaciones prácticas en control por gestos.
+                        Este proyecto reforzó competencias en integración hardware-software, análisis de datos y
+                        documentación técnica profesional.`,
+          image: "img/LMC-demostracion.gif",
+          updatedDate: "Ene-2024",
+          icons: ["img/leap.png", "img/C++.jpg", "img/numpy.png"]
         },
         {
-            title: "Reconocimiento Humano",
-            description: `Mediante la implementación de la herramienta OpenCV y YOLO,  se desarrolló un algoritmo para identificar humanos mediante l procesamiento de imágenes 
-                          con una IA pre-entrenada: YOLO V11. Mejore mis habilidades en el procesamiento y análisis de datos para capturar, procesar, analizar y mejorar los 
-                          resultados de los algoritmos. Su aplicación se extiende ámbitos como la vigilancia de seguridad, la conducción autónoma y la interacción persona-ordenador.
-                          interacción persona-ordenador. OpenCV, proporciona las funciones necesarias para el procesamiento de imágenes y la gestión de vídeo, complementando así las
-                          capacidades de YOLO. Este proyecto busca no sólo mejorar la precisión de la detección, sino también optimizar el rendimiento en entornos dinámicos creando 
-                          un proyecto escalable.`,
-            image: "img/Firends.gif",
-            createdDate: "Oct-2024",
-            updatedDate: "Dic-2024",
-            icons: ["img/Opencv.png", "img/yolo.png"]
+          title: "Reconocimiento Humano con YOLO",
+          description: `Este sistema fue diseñado para la detección de personas en imágenes utilizando un modelo
+                        pre-entrenado de YOLO V11 y la librería OpenCV. OpenCV se encargó del procesamiento y la
+                        manipulación de video, mientras que YOLO ejecutó la detección en tiempo real. La solución se
+                        planteó para escenarios como vigilancia de seguridad, conducción autónoma y sistemas de
+                        interacción humano-computadora. Durante el desarrollo se fortalecieron habilidades en análisis
+                        de resultados, métricas de validación y optimización de algoritmos en entornos dinámicos. El
+                        proyecto demostró la importancia de integrar librerías robustas para crear soluciones escalables y
+                        de alto rendimiento. Asimismo, permitió consolidar experiencia en diseño modular, asegurando
+                        que el sistema pueda adaptarse fácilmente a nuevos casos de uso y expandirse hacia futuras
+                        aplicaciones de visión artificial avanzada.`,
+          image: "img/Firends.gif",
+          createdDate: "Oct-2024",
+          updatedDate: "Dic-2024",
+          icons: ["img/Opencv.png", "img/yolo.png"]
         },
         {
-            title: "IA, Simulación de peces Betta usando GAN´s",
-            description:`La meta de esta IA es aprender el movimiento natural de los peces Betta, comenzando con la simulación de
-                         trayectorias de 50 objetos para escalar el proyecto hacia peces Betta artificiales en un acuario. Adapte y mejore mis habilidades de Python en: 
-                         Tensorflow, Pytorch y Scikit-learn, control de versiones de proyectos asi como uso de mis habilidades de documentación e investigación para resolver 
-                         problemas y necesidades del proyecto. Las ventajas de las GAN incluyen la capacidad de generar datos realistas, enriqueciendo la experiencia visual 
-                         y de interacción En entornos virtuales.`,
-            image: "img/IA simulation.gif",
-            /*createdDate: "Oct-2024",*/
-            updatedDate: "Dic-2024",
-            icons: ["img/Pytorch.png", "img/numpy.png", "img/tensorflow.png"] // Añade los iconos aquí
+          title: "IA, Simulación de peces Betta con GANs",
+          description: `Este proyecto se enfocó en simular el movimiento natural de peces Betta mediante redes
+                        generativas adversarias (GANs). La primera fase generó trayectorias de 50 objetos, sirviendo
+                        como base para escalar a un acuario virtual de peces artificiales. Se usó Python junto con
+                        Tensorflow, PyTorch y Scikit-learn, integrando control de versiones y documentación formal. El
+                        objetivo principal fue lograr realismo en los movimientos para enriquecer experiencias de
+                        simulación e interacción. Se desarrollaron habilidades en modelado de datos, validación de redes
+                        neuronales y optimización de arquitecturas GAN. El proyecto reforzó competencias en investigación
+                        aplicada y diseño de entornos interactivos visuales, destacando la importancia del realismo
+                        computacional para el desarrollo de experiencias inmersivas en contextos de entretenimiento y
+                        experimentación científica.`,
+          image: "img/IA simulation.gif",
+          updatedDate: "Dic-2024",
+          icons: ["img/Pytorch.png", "img/numpy.png", "img/tensorflow.png"]
         },
         {
-            title: "BoomberMan en Python",
-            description: `Este proyecto consiste en la creación de un juego simple utilizando Pygame, donde el jugador 
-                          controla un personaje que se mueve por la pantalla. El juego implementa animaciones para las 
-                          acciones de movimiento y una animación estática que se activa al no presionar teclas. Las 
-                          animaciones se gestionan a través de sprites, permitiendo una experiencia visual dinámica. 
-                          El objetivo es proporcionar un entorno interactivo y entretenido para los jugadores.`,
-            image: "img/boomberman.gif",
-            createdDate: "Mar-2019",
-            updatedDate: "Nov-2024",
-            icons: ["img/pygame.png"]
+          title: "Manejo y uso de API's",
+          description: `En estos proyectos se documentó y consolidó la cobertura de integraciones API durante los últimos seis
+                        meses, incluyendo Amazon SP-API, DHL MyDHL y FedEx Webhooks. Se clasificaron los
+                        endpoints en categorías como "siempre accesibles, vacíos y dependientes de datos futuros",
+                        permitiendo estandarizar procesos y planear futuras expansiones. Además, se implementaron
+                        prácticas documentales, monitoreo y clasificación de disponibilidad. Los proyectos en manejo de API's
+                        frotalecieron habilidades en integración de servicios de logística, comercio electrónico y analítica,
+                        contribuyendo a la construcción de una arquitectura de automatización más robusta y escalable.
+                        También representó un ejercicio clave en la gestión de APIs diversas, garantizando un control
+                        más claro del estado de cada integración y estableciendo las bases para el crecimiento futuro
+                        del ecosistema de servicios empresariales.  Gif ilustrativo`,
+          image: "img/GIF_APIS.gif",
+          updatedDate: "Sep-2025",
+          icons: ["img/logo_AMAZON.png", "img/logo_DHL.png", "img/logo_FEDEX.png", "img/logo_OLLAMA.png"]
         },
         {
-            title: "Ping pong con Pygame",
-            description: `Pygame es una biblioteca de Python que permite desarrollar videojuegos de manera sencilla,
-                          proporcionando herramientas para manejar gráficos, sonido y eventos. Al utilizar Pygame, 
-                          se pueden desarrollar habilidades en lógica de programación, diseño de interfaces gráficas 
-                          y simulación de física de objetos. En este proyecto de videojuego estilo ping pong, muy al estilo de los 2000, 
-                          implementé modularizaciones que separan la lógica del juego, la física de las colisiones y 
-                          la interfaz gráfica, lo que facilita el mantenimiento y la expansión del código.`,
-            image: "img/Pingpong.gif",
-            createdDate: "Jun-2024",
-            updatedDate: "Jul-2024",
-            icons: ["img/pygame.png"]
+          title: "Generador de SKUs en Illustrator",
+          description: `El proyecto duirante su ultimo update, se desarrolló scripts de emergencia para garantizar la continuidad de procesos
+                        gráficos en Illustrator en casos donde los archivos CSV no estuvieran disponibles. Se crearon
+                        versiones mejoradas de scripts previos, creados tambie por su servidor en marzo de 2025 incorporando interfaces gráficas con Tkinter, detección
+                        automática de equipos, generación de reportes TXT y registro detallado de logs. Estas mejoras
+                        incrementaron la usabilidad y redujeron errores en la producción de materiales. Se reforzaron
+                        competencias en Python avanzado, desarrollo de GUI, automatización en Illustrator y diseño de
+                        flujos de respaldo. Además, se implementaron técnicas de validación en tiempo real y reportes
+                        automáticos de nodos faltantes, lo que permitió una gestión más eficiente. Este proyecto fue
+                        clave para fortalecer la resiliencia del área de diseño y asegurar entregas confiables en escenarios
+                        críticos.`,
+          image: "img/GIF_SKU.gif",
+          updatedDate: "Sep-2025",
+          icons: ["img/python.png", "img/logo_ai.png","img/logo_EXCEL.png"]
+        },
+        {
+          title: "Generador de XLSX, basados en templates, diccionarios, data base",
+          description: `La aplicación automatizó la generación de plantillas Liverpool a partir de datos PLM en
+                        formatos CSV o Excel. El sistema validó tallas y colores con diccionarios predefinidos, generó
+                        un archivo XLSX por categoría de prenda y presentó una vista previa en ASCII junto con logs
+                        detallados para auditoría. La interfaz gráfica simplificó su uso para personal no técnico, mientras
+                        que el empaquetado como aplicación de escritorio permitió su despliegue en múltiples equipos.
+                        El proyecto reforzó habilidades en procesamiento de datos, validación automática, manejo de
+                        excepciones y normalización de catálogos. También consolidó la experiencia en creación de
+                        herramientas a medida para el área de producción, garantizando eficiencia, estandarización y
+                        trazabilidad en la entrega de archivos a clientes. Gif ilustrativo`,
+          image: "img/GIF_EXCELAUTO.gif",
+          updatedDate: "Sep-2025",
+          icons: ["img/python.png", "img/logo_EXCEL.png"]
+        },
+        {
+          title: "Maxi – Chatbot de servicio al cliente",
+          description: `Este flujo unificado en n8n fue diseñado para atender clientes en México y Estados Unidos.
+                        Se conectó con Shopify, Zendesk y DHL para gestionar órdenes, tickets y rastreos, además de
+                        ofrecer respuestas automáticas a FAQs. Incluyó la creación de tickets con validaciones estrictas
+                        y el registro de todas las interacciones en Google Sheets para análisis y reportes semanales.
+                        El sistema mejoró la gestión de credenciales, reforzó la seguridad y estandarizó procesos entre
+                        regiones. Durante el desarrollo se fortalecieron competencias en diseño de workflows, NLP
+                        aplicado y mejores prácticas de automatización. El resultado fue un sistema robusto y adaptable,
+                        optimizado para escalar y responder de forma uniforme en dos mercados diferentes, integrando
+                        múltiples servicios de soporte en una sola plataforma.`,
+          image: "img/GIF_MAXI.gif",
+          updatedDate: "Sep-2025",
+          icons: ["img/logo_N8N.png", "img/logo_SHOPIFY.png", "img/logo_ZENDESK.png", "img/logo_DHL.png"]
+        },
+        {
+          title: "Reportes automaticos",
+          description: `Este proyecto implementó flujos en n8n para generar reportes semanales del chatbot,
+                        consolidando métricas como número de FAQs respondidas, tickets creados, órdenes procesadas
+                        y errores detectados. Los flujos integraron Google Sheets para obtener datos, nodos de
+                        JavaScript para procesar la información y QuickChart para graficar los resultados. Se generaron
+                        histogramas de chats y mensajes, además de gráficas de distribución de FAQs y errores. El
+                        sistema enviaba los reportes por correo electrónico a los equipos internos, estandarizando la
+                        comunicación y reduciendo el trabajo manual. El proyecto permitió desarrollar habilidades en
+                        visualización de datos, automatización de reportes, integración de múltiples servicios y
+                        comunicación efectiva con stakeholders, garantizando transparencia en el seguimiento del
+                        rendimiento del chatbot.`,
+          image: "img/GIF_REPORTS.gif",
+          updatedDate: "Sep-2025",
+          icons: ["img/logo_N8N.png", "img/logo_EXCEL.png", "img/logo_GMAIL.png"]
+        },
+        {
+          title: "TechPack autogenerados en Illustrator",
+          description: `El sistema automatizó la creación de TechPacks en Illustrator a partir de un CSV consolidado.
+                        Fue capaz de duplicar artboards según líderes activos, reemplazar texto, aplicar colores RGB,
+                        insertar imágenes y exportar archivos finales en formatos AI y PDF. El flujo de trabajo incluyó
+                        validación de nodos, limpieza de elementos inactivos y selección dinámica de plantillas. El
+                        proyecto se implementó en macOS con integración de JSX y AppleScript, optimizando la
+                        producción de documentos gráficos. Se fortalecieron habilidades en integración de software,
+                        diseño de flujos automatizados y generación de archivos de alta calidad para producción. Además,
+                        el sistema permitió reducir errores manuales, acelerar la entrega de materiales y crear procesos
+                        reproducibles para futuros proyectos de diseño industrial y gráfico.`,
+          image: "img/GIF_TECHPACK.gif",
+          updatedDate: "Sep-2025",
+          icons: ["img/logo_ai.png", "img/python.png", "img/logo_JSX.png"]
+        },
+        {
+          title: "BoomberMan en Python",
+          description: `Este proyecto recreó un videojuego estilo clásico utilizando Pygame. El jugador controla un
+                        personaje con animaciones dinámicas para movimiento y estados inactivos, gestionadas a través
+                        de sprites. El desarrollo permitió reforzar habilidades en lógica de programación, diseño modular
+                        y uso de motores de animación básicos. Se enfocó en ofrecer una experiencia interactiva sencilla
+                        pero atractiva, aplicando conceptos de simulación de físicas y manejo de eventos. Además,
+                        representó una práctica sólida en la separación de lógica, renderizado y control de entradas.
+                        Este trabajo consolidó conocimientos en Python aplicado a entretenimiento digital y demostró
+                        la capacidad de crear prototipos de juegos escalables que pueden evolucionar con más niveles,
+                        funcionalidades y elementos gráficos.`,
+          image: "img/boomberman.gif",
+          createdDate: "Mar-2019",
+          updatedDate: "Nov-2024",
+          icons: ["img/pygame.png"]
+        },
+        {
+          title: "Ping pong con Pygame",
+          description: `El proyecto consistió en desarrollar un videojuego de ping pong en estilo retro utilizando
+                        Pygame. Se implementó la simulación de colisiones, control de la física de la pelota y manejo
+                        de puntuaciones en tiempo real. La lógica del juego, la interfaz gráfica y la física se organizaron
+                        de manera modular, lo que facilitó el mantenimiento y la posibilidad de añadir nuevas funciones.
+                        Se reforzaron habilidades en diseño de juegos 2D, animaciones simples y programación de
+                        interfaces interactivas. Además, el proyecto destacó la importancia de separar responsabilidades
+                        en el código, permitiendo escalar el juego hacia variantes más complejas. Fue un ejercicio
+                        práctico de lógica, creatividad y programación, demostrando la capacidad de utilizar Python
+                        para entretenimiento interactivo.`,
+          image: "img/Pingpong.gif",
+          createdDate: "Jun-2024",
+          updatedDate: "Jul-2024",
+          icons: ["img/pygame.png"]
         }
-    ];
+      ];      
 
 
     // Datos de la trayectoria
