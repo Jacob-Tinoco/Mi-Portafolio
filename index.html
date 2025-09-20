@@ -135,71 +135,12 @@
             </a> 
         </div>
     </footer>
-<!-- Chatbot n8n Widget -->
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<div id="n8n-chat"></div>
-<script>
-  function loadN8nChat() {
-    const script = document.createElement('script');
-    script.type = 'module';
-    script.innerHTML = `
-      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-      createChat({
-        webhookUrl: ' ',
-        target: '#n8n-chat',
-        mode: 'window',
-        avatar: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f916.png',
-        style: {
-          '--n8n-chat-bottom': '100px',
-          '--n8n-chat-right': '40px',
-          '--n8n-chat-title-bg': '#18191c',        // Barra superior: casi negro
-          '--n8n-chat-title-color': '#fff',        // Título: blanco
-          '--n8n-chat-bg': '#232323',              // Fondo ventana: gris-negruzco
-          '--n8n-chat-bubble-bg': '#232323',       // Globo usuario: igual que fondo
-          '--n8n-chat-bubble-color': '#fff',       // Texto usuario: blanco
-          '--n8n-chat-bubble-bot-bg': '#18191c',   // Globo bot: casi negro
-          '--n8n-chat-bubble-bot-color': '#fff',   // Texto bot: blanco
-          '--n8n-chat-bubble-radius': '50px',
-          '--n8n-chat-bubble-padding': '12px 18px',
-          '--n8n-chat-input-bg': '#18191c',        // Input: casi negro
-          '--n8n-chat-input-color': '#fff',        // Input: blanco
-          '--n8n-chat-primary-color': '#18191c',   // Botón de enviar y acentos: gris oscuro
-          '--n8n-chat-avatar-size': '32px',
-          '--n8n-chat-title-font-size': '1.1em',
-          '--n8n-chat-font-family': 'Inter, "Segoe UI", Arial, sans-serif',
-          '--n8n-chat-bubble-font-size': '1em',
-          '--n8n-chat-toggle-bg': '#18191c',       // Botón flotante: casi negro
-          '--n8n-chat-toggle-color': '#fff',       // Ícono: blanco
-        },
-        
-        initialMessages: [
-          "Welcome to Pro Standard US! 👋",
-          "I'm Maxi, your virtual assistant powered by artificial intelligence.",
-          "How can I help you today?",
-        ],
-        i18n: {
-          en: {
-              title: "Pro Standard US",
-              subtitle: "24/7 customer service, powered by AI",
-              inputPlaceholder: 'Write a message and press send...',
-              getStarted: 'Start'
-          }
-        }
-      });
-    `;
-    document.body.appendChild(script);
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadN8nChat);
-  } else {
-    loadN8nChat();
-  }
-</script>
 
     <script src="js/main.js"></script>
 </body>
 </html>
 :
+
 
 
 
