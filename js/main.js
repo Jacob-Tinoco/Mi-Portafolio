@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         trazabilidad en la entrega de archivos a clientes. Gif ilustrativo`,
           image: "img/GIF_EXCELAUTO.gif",
           updatedDate: "Sep-2025",
-          icons: ["img/python.png", "img/logo_EXCEL.png"]
+          icons: ["img/python (2).png", "img/logo_EXCEL.png"]
         },
         {
           title: "Maxi – Chatbot de servicio al cliente",
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         reproducibles para futuros proyectos de diseño industrial y gráfico.`,
           image: "img/GIF_TECHPACK.gif",
           updatedDate: "Sep-2025",
-          icons: ["img/logo_ai.png", "img/python.png", "img/logo_JSX.png"]
+          icons: ["img/logo_ai.png", "img/python (2).png", "img/logo_JSX.png"]
         },
         {
           title: "BoomberMan en Python",
@@ -660,4 +660,5 @@ document.getElementById('show-less-trayectoria').addEventListener('click', funct
     loadTrayectoria();
     loadSobreMi();
 });
+
 
