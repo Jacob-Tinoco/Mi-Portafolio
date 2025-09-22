@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         críticos.`,
           image: "img/GIF_SKU.gif",
           updatedDate: "Sep-2025",
-          icons: ["img/python.png", "img/logo_ai.png","img/logo_EXCEL.png"]
+          icons: ["img/python (2).png", "img/logo_ai.png","img/logo_EXCEL.png"]
         },
         {
           title: "Generador de XLSX, basados en templates, diccionarios, data base",
@@ -660,3 +660,4 @@ document.getElementById('show-less-trayectoria').addEventListener('click', funct
     loadTrayectoria();
     loadSobreMi();
 });
+
