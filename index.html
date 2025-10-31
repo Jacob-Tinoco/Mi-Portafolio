@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob Tinoco - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>n8n Chat Widget Example</title>
+
+  <!-- Include the n8n chat widget styling -->
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+  <!-- Medidas de seguridad (opcional: ajusta si activas CSP) -->
+  <!--
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://cdn.jsdelivr.net;
+    style-src  'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+    img-src    'self' data: https:;
+    connect-src 'self' http://10.200.2.216:5678 http://10.200.2.216:5500;
+  ">
+  -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- CSS del widget n8n (requerido) -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#proyectos">PROYECTOS</a></li>
+        <li><a href="#trayectoria">TRAYECTORIA</a></li>
+        <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+        <li><a href="#contactos">CONTACTOS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>JACOB TINOCO</h1>
+      <p id="rol">Ing. Mecatrónico orientado a Programación en AI y Procesos automatizados.</p>
+      <img src="img/logo-1.png" alt="Logo de Jacob Tinoco" id="logo">
+      <p id="slogan">Un placer conocerte</p>
+      <a href="files/Jacob Tinoco-cv.pdf" class="btn-download-cv" download>Descarga mi CV</a>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="projects-grid"></div>
+      <button id="show-more-projects" class="btn-show-more">Mostrar más</button>
+      <div class="hidden-projects" style="display:none;"></div>
+      <button id="show-less-projects" class="btn-show-less" style="display:none;">Mostrar menos</button>
+    </section>
+
+    <section id="trayectoria">
+      <h2>Trayectoria</h2>
+      <div class="trayectoria-grid"></div>
+      <button id="show-more-trayectoria" class="btn-show-more">Mostrar más</button>
+      <div class="hidden-trayectoria" style="display:none;"></div>
+      <button id="show-less-trayectoria" class="btn-show-less" style="display:none;">Mostrar menos</button>
+    </section>
+
+    <section id="sobre-mi">
+      <h2>Sobre Mí</h2>
+      <div class="sobre-mi-container"></div>
+      <div class="habilidades técnicas">
+        <h4>Habilidades</h4>
+        <div class="habilidad">
+          <h5>Fuertes</h5>
+          <div class="iconos">
+            <img src="img/C++_DARK.png" alt="Programa 1">
+            <img src="img/Pythondark.png" alt="Programa 2">
+          </div>
+        </div>
+        <div class="habilidades-horizontal">
+          <div class="habilidad">
+            <h5>Básico-Intermedio</h5>
+            <div class="iconos">
+              <img src="img/blender.png" alt="Programa 3">
+              <img src="img/sw.png" alt="Programa 4">
+            </div>
+          </div>
+          <div class="habilidad">
+            <h5>Aprendiendo</h5>
+            <div class="iconos">
+              <img src="img/html.png" alt="Programa 5">
+              <img src="img/js.png" alt="Programa 6">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cta-container">
+        <a href="files/Jacob Tinoco-cv.pdf" class="btn-download-cv" download>Descarga mi CV</a>
+      </div>
+    </section>
+
+    <section id="contactos">
+      <h2>Contactos</h2>
+      <div class="contactos-container">
+        <a href="mailto:jacobtinoco.ao@gmail.com?subject=Contacto desde tu Portafolio" class="contact-button email">
+          <img src="img/mail.jpg" alt="QR para enviarme correo" class="qr-image">
+          <span>Email</span>
+        </a>
+        <a href="https://www.linkedin.com/in/jacob-t-329675258/" target="_blank" class="contact-button linkedin">
+          <img src="img/ln.jpg" alt="QR a mi perfil de LinkedIn" class="qr-image">
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Jacob-Tinoco" target="_blank" class="contact-button github">
+          <img src="img/git.png" alt="QR a mi perfil de Github" class="qr-image">
+          <span>Github</span>
+        </a>
+        <a href="https://orcid.org/0000-0003-4285-5587" target="_blank" class="contact-button orcid">
+          <img src="img/orcid.png" alt="QR a mi perfil de orcid" class="qr-image">
+          <span>Orcid</span>
+        </a>
+        <a href="https://www.instagram.com/jknc.0/" target="_blank" class="contact-button instagram">
+          <img src="img/insta.jpg" alt="QR a mi perfil de Instagram" class="qr-image">
+          <span>Instagram</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <a href="mailto:jacobtinoco.ao@gmail.com?subject=Contacto desde tu Portafolio" target="_blank" class="contact-info-button">
+        <img src="img/email-icon.png" alt="Email" class="email-icon">
+        <span>Contáctame</span>
+      </a>
+    </div>
+  </footer>
+
+    <!-- The script to initialize the n8n chat widget -->
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+  
+      createChat({
+        webhookUrl: 'http://localhost:5678/webhook/ccf411cb-1d61-4408-a8a4-a90e9507cdda/chat', // <-- Replace with your n8n webhook URL
+        // You can customize the widget here with other options:
+        // branding: {
+        //   name: 'Support Bot',
+        //   logo: 'https://example.com/logo.png',
+        // },
+        // style: {
+        //   primaryColor: '#854fff',
+        //   position: 'right',
+        // },
+      });
+    </script>
+
+  <!-- n8n chat widget (UMD, único) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@n8n/chat@latest/dist/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@n8n/chat@latest/dist/chat.bundle.umd.js"></script>
+  <script>
+    createChat({
+      webhookUrl: 'http://10.200.2.216:5678/webhook/ccf411cb-1d61-4408-a8a4-a90e9507cdda/chat',
+      // defaultOpen: true,
+    });
+  </script>  
+
+  <!-- Tu JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
